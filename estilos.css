@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Esteban&family=Kumbh+Sans:wght@400;700&family=Merriweather+Sans:ital@0;1&family=Old+Standard+TT:wght@400;700&family=Open+Sans&family=Oswald:wght@500;600;700&family=Roboto:ital,wght@1,300&family=Rubik+Gemstones&family=Sahitya&family=Shrikhand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.dark, .dark{
+    background-color: #0F172A;
+    color: white;
+}
+
+/* aqui inicia los estilos de la cabezera ⬇⬇⬇*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 36px 0; */
+    padding-top: 40px;
+    padding-bottom: 15px;
+    gap: 80px;
+    position: fixed;
+    width: 100%;
+    margin-top: -30px;
+    z-index: 3;
+    background-color: #171B31;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+}
+
+nav a:hover{
+    color: #79BA91;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+    transition-duration: 300ms;
+    transform: translateY(-4px);
+    scale: 1;
+}
+
+/* aqui terminan los estilos de la cabezera ⬆⬆⬆ */
+
+
+/* aqu inician los estilos del video ⬇⬇⬇ */
+.contenedorVideo{
+    padding-top: 80px;
+}
+
+#video{
+    width: 100%;
+    /* height: 100%; */
+}
+/* aqui termina los estilos del video ⬆⬆⬆ */
+
+
+/* aqui inician los estilos de las card ⬇⬇⬇ */
+.tituloViajes{
+    text-align: center;
+    text-transform: uppercase;
+    color: #314652;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+}
+
+.contenedorCard{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.contenedorCard{
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 25%;
+    border: 1px solid white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.card:hover{
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+    transition: 1.5;
+}
+
+.containerImg{
+    /* width: 80%; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.containerImg::before{
+    content: "";
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-left: 400px solid white;
+    bottom: 0;
+}
+
+.containerImg img{
+    width: 100%;
+    /* position: relative; */
+}
+
+.containerText h3{
+    text-align: center;
+    overflow: hidden;
+    color: #314652;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.containerSpan{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: center;
+    color: gray;
+}
+
+.containerText p{
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #605E5E;
+}
+
+.leer-mas{
+    display: none;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid #314652;
+    background-color: #314652;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.containerValor{
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.containerValor div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerValor span{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.valor{
+    color: #314652;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.containerValor button{
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 90%;
+    border: 1px solid #314652;
+    background-color: #314652;
+    border-radius: 7px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.containerValor button:hover{
+    background-color: #FCC718;
+    border: 1px solid #FCC718;
+}
+
+/* aqui termina los estilos de las card ⬆⬆⬆ */
+
+
+/* aqui inician los estilos de los tipos de viaje ⬇⬇⬇ */
+
+.tiposTitulo{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #314652;
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+.tiposDeViajes{
+    /* background-color: #314652; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.tiposDeViajes div{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.tiposDeViajes img{
+    width: 130px;
+}
+
+.tiposDeViajes h2{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #314652;
+}
+
+/* aqui termina los estilos de los tipos de viajes */
+
+/* aqui inician los estilos del slider */
+
+/* .contenedorSection{
+    width: 100%;
+    position: relative;
+} */
+
+.carousel{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.carousel__contenedor{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente{
+    position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 25px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: black;
+	opacity: 80%;
+}
+
+
+.carousel__anterior {
+	left: -30px;
+}
+
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento img{
+    width: 50px;
+}
+
+.carousel__anterior i{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    width: 60px;
+}
+
+.carousel__siguiente i{
+    left: -30px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    width: 60px;
+
+}
+
+.carousel__lista img{
+    width: 100%;
+    height: 70%;
+}
+
+.carousel__indicadores{
+    border-radius: 0;
+}
+
+/* aqui termina los estilos del slider ⬆⬆⬆ */
+
+/* aqui inician los estilos del las formas de conctato ⬇⬇⬇ */
+
+.tituloContacto{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* aqui termina los estilos de contacto ⬆⬆⬆*/
+
+/* aqui inician los estilos de footer ⬇⬇⬇*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+footer p{
+    padding-top: 20px;
+    padding-left: 50px;
+    color: white;
+}
+
+.redes{
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.redes a{
+    font-size: 40px;
+    color: white;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.datos span{
+    color: white;
+}
+
+.datosIconos{
+    width: 10%;
+    height: 150px;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+}
+
+.phone{
+    width: 40%;
+    height: 52px;
+    background-color: #007EC4;
+    border: 1px solid #007EC4;
+    box-shadow: 0 2px 16px #007EC4;
+    border-radius: 100%;
+    margin-left: 72px;
+}
+
+.phone a{
+    text-decoration: none;
+}
+
+.phone i{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.whatsapp{
+    width: 40%;
+    height: 52px;
+    background-color: #10B418;
+    border: 1px solid #10B418;
+    box-shadow: 0 2px 16px #10B418;
+    border-radius: 100%;
+    margin-left: 72px;
+    margin-top: 10px;
+}
+
+.whatsapp a{
+    text-decoration: none;
+}
+
+.whatsapp i{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 600px) {
+
+    header{
+        display: block;
+    }
+
+    header .imagen{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    /* .reponsive{
+        position: relative;
+    } */
+
+    nav{
+        display: block;
+        padding-left: 10px;
+    }
+    
+    nav a{
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        /* margin-left: 20px; */
+        padding: 0px 10px;
+    }
+
+    nav a:hover{
+        color: #7F47EF;
+        border-bottom: 0;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    nav .close{
+        margin-top: 90%;
+    }
+
+    .contenedorVideo{
+        padding-top: 135px;
+    }
+
+
+    .contenedorCard{
+        display: block;
+    }
+
+    .card{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+
+    .tiposDeViajes{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tiposDeViajes div img{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .carousel__contenedor{
+        width: 80%;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+    }
+
+    .redes{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .datosIconos{
+        right: 10px;
+        margin-right: 15px;
+    }
+
+    .datosIconos .phone, .whatsapp{
+        margin-left: 0px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .datosIconos, .phone, .whatsapp, a{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+
+    .contenedorCard{
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .card{
+        width: 45%;
+    }
+
+    .tiposDeViajes{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tiposDeViajes div img{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+    }
+
+    .redes{
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .visita{
+        margin-right: 20px;
+    }
+
+    .datosIconos{
+        right: 30px;
+        margin-right: -25px;
+    }
+
+    .datosIconos .phone, .whatsapp{
+        margin-left: 0px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px){
+    .datosIconos{
+        right: 30px;
+        margin-right: -55px;
+    }
+
+    .datosIconos .phone, .whatsapp{
+        margin-left: 0px;
+        width: 50px;
+        height: 50px;
+    }
+}
