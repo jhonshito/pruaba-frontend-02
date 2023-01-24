@@ -96,7 +96,8 @@ new Glider(document.querySelector('.carousel__lista'), {
 //   })
 // }
 
-
+// const check = document.getElementById("check")
+// console.log(check.value)
 const links = document.querySelectorAll('nav a')
 for (let link of links) {
   link.addEventListener('click', (e) => {
@@ -105,5 +106,24 @@ for (let link of links) {
     document.querySelector(href).scrollIntoView({
       behavior: 'smooth'
     })
+    // console.log(check.value)
   })
 }
+
+const link = document.querySelectorAll("a");
+links.forEach(linkk => {
+  linkk.addEventListener("click", function() {
+    document.querySelector("ul").style.left = "-100%";
+  });
+});
+
+const checkbtn = document.querySelector(".checkbtn");
+const navbar = document.querySelector("ul");
+
+checkbtn.addEventListener("click", function() {
+    if(navbar.style.left === "-100%"){
+        navbar.style.left = "0";
+    } else {
+        navbar.style.left = "-100%";
+    }
+});
