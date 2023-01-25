@@ -133,8 +133,8 @@ li a:hover{
 
 .card:hover{
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-15px);
-    transition: 1.5;
+    /* transform: translateY(-15px);
+    transition: 1.5; */
 }
 
 .containerImg{
@@ -230,8 +230,8 @@ li a:hover{
 }
 
 .containerValor button:hover{
-    background-color: #FCC718;
-    border: 1px solid #FCC718;
+    background-color: #007EC4;
+    border: 1px solid #007EC4;
 }
 
 /* aqui termina los estilos de las card ⬆⬆⬆ */

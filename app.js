@@ -49,55 +49,6 @@ new Glider(document.querySelector('.carousel__lista'), {
     ]
 });
 
-// const boton = document.querySelector(".boton");
-// const modo = document.querySelector(".bi");
-// const body = document.body
-// const moon = document.querySelector(".moon")
-
-// const toggleDarkMode = () => {
-//   darkMode = !darkMode;
-//   body.classList.toggle("dark", darkMode);
-//   localStorage.setItem("dark", darkMode);
-//   boton.style.display = darkMode ? "block" : "none";
-//   moon.style.display = darkMode ? "none" : "block";
-//   if(!darkMode) localStorage.removeItem("dark");
-// };
-
-// boton.addEventListener("click", toggleDarkMode);
-// moon.addEventListener("click", toggleDarkMode);
-
-// window.addEventListener("load", () => {
-//   darkMode = JSON.parse(localStorage.getItem("dark") || "false");
-//   body.classList.toggle("dark", darkMode);
-//   boton.style.display = darkMode ? "block" : "none";
-//   moon.style.display = darkMode ? "none" : "block";
-// });
-
-// const menu = document.querySelector(".menu");
-// const close = document.querySelector(".close")
-// const nav = document.querySelector("nav");
-
-// if(window.matchMedia("(min-width: 100px) and (max-width: 600px)").matches){
-
-//   menu.addEventListener("click", () => {
-
-//     nav.style.display = "flex"
-//     nav.style.flexDirection = "column"
-//     nav.setAttribute("style", "display : flex", "padding-top: 50px")
-//     close.setAttribute("style", "display: block", "margin-top: 90%")
-//   });
-// }
-
-
-// if(window.matchMedia("(min-width: 100px) and (max-width: 600px)").matches){
-  
-//   close.addEventListener("click", () => {
-//     nav.setAttribute("style", "display : none")
-//   })
-// }
-
-// const check = document.getElementById("check")
-// console.log(check.value)
 const links = document.querySelectorAll('nav a')
 for (let link of links) {
   link.addEventListener('click', (e) => {
@@ -106,7 +57,6 @@ for (let link of links) {
     document.querySelector(href).scrollIntoView({
       behavior: 'smooth'
     })
-    // console.log(check.value)
   })
 }
 
