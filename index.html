@@ -335,13 +335,13 @@
             </div>
             <div class="datosIconos">
                 <div class="phone">
-                    <a href="tel:+57 3107994335" target="_blank">
+                    <a onclick="clickWhatsapp()" href="tel:+57 3107994335" target="_blank">
                         <i class="bi bi-telephone-inbound"></i>
                     </a>
                 </div>
 
                 <div class="whatsapp">
-                    <a href="https://api.whatsapp.com/send?phone=573107994335" target='_blank'>
+                    <a onclick="clickWhatsapp()" href="https://api.whatsapp.com/send?phone=573107994335" target='_blank'>
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </div>
@@ -351,5 +351,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
     <script src="/app.js"></script>
+    <script>
+        function clickWhatsapp() {
+            gtag('event', '<event_name>', {
+                'event_name': "whatsapp"
+            });
+        }
+
+        function clickLLamar() {
+            gtag('event', '<event_name>', {
+                'event_name': "llamar"
+            });
+        }
+    </script>
 </body>
 </html>
